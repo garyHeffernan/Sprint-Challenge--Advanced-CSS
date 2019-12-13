@@ -179,7 +179,7 @@ p {
 .top-area nav {
   padding: 15px;
   font-size: 1.75rem;
-  width: 80%;
+  width: 30%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -190,6 +190,7 @@ p {
 @media (max-width: 500px) {
   .top-area nav {
     font-size: 1.5rem;
+    width: 80%;
   }
 }
 footer {
@@ -204,6 +205,20 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+}
+@keyframes slidein {
+  0% {
+    padding-top: 0%;
+  }
+  50% {
+    margin-top: -20%;
+  }
+  100% {
+    padding-top: 0%;
+  }
 }
 .home .intro p {
   padding: 0 15px;
