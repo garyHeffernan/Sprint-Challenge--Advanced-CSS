@@ -1,1 +1,32 @@
 // Mixins Here
+// Create and use 2 different
+// mixins to aid your styling.
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.smooth(){
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* 
+* [ ] LESS Parametric Mixin: create a parametric mixin 
+that is used to create the `sign up` button styles.
+
+* [ ]  Use at least 2 parameters to create your button
+
+* [ ] Create a hover state that swaps the background color 
+and font color of the base button styles.
+
+*/
+
+.btn-layout(@padding, @border-radius, @font-size, @width){
+    padding: @padding;
+    border-radius:@border-radius;
+    font-size:@font-size;
+    width:@width;
+}

@@ -11,6 +11,10 @@
     p {
       padding:0 15px;
     }
+
+    img{
+      .smooth();
+    }
   
   }
 
@@ -58,6 +62,15 @@
       }
 
       .btn {
+        .btn-layout(7.5px 15px; 5px; 2rem; 100px);
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: white;
+          color: black;
+        }
       }
     }
 
