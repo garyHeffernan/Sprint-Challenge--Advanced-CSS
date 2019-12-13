@@ -6,10 +6,28 @@
 
     h2 {
       padding: 15px;
+      animation-duration: 8s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+    }
+    @keyframes slidein{
+      0%{
+          padding-top:0%;
+      }
+      50%{
+          margin-top:-20%;
+      }
+      100%{
+          padding-top:0%;
+      }
     }
 
     p {
       padding:0 15px;
+    }
+
+    img{
+      .smooth();
     }
   
   }
@@ -58,6 +76,15 @@
       }
 
       .btn {
+        .btn-layout(7.5px 15px; 5px; 2rem; 100px);
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: white;
+          color: black;
+        }
       }
     }
 
@@ -73,3 +100,48 @@
     }
   }
 }// home
+
+@media @phone{
+  .home{
+     
+    .space-images{
+
+      img{
+        width:100%;
+      }
+    }
+
+    .sky, .launch{
+      display:none;
+    }
+
+    .walk {
+      margin-top: 5px;
+      border-top: 1px solid @main-border-color;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column-reverse;
+  
+      .walk-text {
+        width: 100%;
+
+        .btn {
+          .btn-layout(18px 40%; 5px; 2rem; 100%);
+          background-color: rgb(2, 2, 50);
+          cursor: pointer;
+          
+          &:hover {
+            color: rgb(2, 2, 50);
+          }
+        }
+      }
+  
+      .walk-img {
+        width: 100%;
+        margin-left: 0%;
+        padding: 15px 0px;
+        
+      }
+    }
+  }
+}

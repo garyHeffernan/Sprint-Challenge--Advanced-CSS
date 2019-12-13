@@ -1,1 +1,19 @@
 // Mixins Here
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.smooth(){
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.btn-layout(@padding, @border-radius, @font-size, @width){
+    padding: @padding;
+    border-radius:@border-radius;
+    font-size:@font-size;
+    width:@width;
+}

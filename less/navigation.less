@@ -1,1 +1,38 @@
 // Navigation code here
+.top-area{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+    div{
+        .center();
+    }
+
+    h1{
+        margin-top: 20px;
+    }
+
+    nav{
+        padding: 15px;
+        font-size: 1.75rem;
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media @phone{
+    .top-area{
+
+        nav{
+            font-size: 1.5rem;
+            width: 80%;
+        }
+
+    }
+}
