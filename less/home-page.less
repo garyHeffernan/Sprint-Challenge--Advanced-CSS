@@ -86,3 +86,48 @@
     }
   }
 }// home
+
+@media @phone{
+  .home{
+     
+    .space-images{
+
+      img{
+        width:100%;
+      }
+    }
+
+    .sky, .launch{
+      display:none;
+    }
+
+    .walk {
+      margin-top: 5px;
+      border-top: 1px solid @main-border-color;
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column-reverse;
+  
+      .walk-text {
+        width: 100%;
+
+        .btn {
+          .btn-layout(18px 40%; 5px; 2rem; 100%);
+          background-color: rgb(2, 2, 50);
+          cursor: pointer;
+          
+          &:hover {
+            color: rgb(2, 2, 50);
+          }
+        }
+      }
+  
+      .walk-img {
+        width: 100%;
+        margin-left: 0%;
+        padding: 15px 0px;
+        
+      }
+    }
+  }
+}
